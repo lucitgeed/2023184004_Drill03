@@ -1,5 +1,5 @@
 from pico2d import *
-
+import math
 
 open_canvas()
 
@@ -22,8 +22,8 @@ def run_circle():
     print("circle")
 
     r = 300
-    x = r * cos(theta)
-    y = r* sin(theta)
+    x = r * math.cos(theta)
+    y = r * math.sin(theta)
     
 
     clear_canvas_now()
