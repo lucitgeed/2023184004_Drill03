@@ -21,14 +21,16 @@ def run_rectangle():
 def run_circle():
     print("circle")
 
-    r = 300
-    x = r * math.cos(theta)
-    y = r * math.sin(theta)
+    r, cx, cy = 300, 800 // 2, 600 // 2
     
+    for degree in range(0, 360, 3):
 
-    clear_canvas_now()
-    char.draw_now(x, y)
-    delay(0.1)
+        theta = math.radians(degree)
+        x = r * math.cos(theta) + cx
+        y = r * math.sin(theta) + cy
+        clear_canvas_now()
+        char.draw_now(x, y)
+        delay(0.1)
 
     
 
