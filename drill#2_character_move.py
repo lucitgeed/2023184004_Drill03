@@ -13,48 +13,44 @@ def draw_char(x, y):
         clear_canvas_now()
         char.draw_now(x, y)
         delay(0.01)
+        pass
 
     
-
 def run_top():
     print("top")
     for x in range(0, 800, 10):
-        draw_char(x, 550)
+        draw_char(800 - x, 550)
     pass
-
 
 def run_right():
     print("right")
     for y in range(0, 600, 10):
-        draw_char(790, 600 - y)
+        draw_char(790, y)
     pass
-
 
 def run_bottom():
     print("bottom")
     for x in range(0, 800, 10):
-        draw_char(800 - x, 50)
+        draw_char(x, 50)
     pass
 
 def run_left():
     print("left")
     for y in range(0, 600, 10):
-        draw_char(10, y)
+        draw_char(10, 600 - y)
     pass
+
 
 
 def run_rectangle():
     print("ractangle")
 
-#    run_top()
-#    run_right()
+    run_right()
+    run_top()
+    run_left()
     run_bottom()
-#    run_left()
-
-    
+   
     pass
-
-
 
 
 
@@ -73,14 +69,12 @@ def run_circle():
         draw_char(x, y)
 
 
-    pass
-    
 
 
 
 while True:
     run_rectangle()
-    #run_circle()
+#    run_circle()
 
     break
 
