@@ -32,6 +32,8 @@ def run_right():
 
 def run_bottom():
     print("bottom")
+    for x in range(0, 800, 10):
+        draw_char(x, 50)
     pass
 
 def run_left():
@@ -43,7 +45,7 @@ def run_rectangle():
     print("ractangle")
 
 #    run_top()
-    run_right()
+#    run_right()
     run_bottom()
     run_left()
 
