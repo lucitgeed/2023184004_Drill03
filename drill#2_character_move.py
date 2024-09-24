@@ -1,5 +1,6 @@
 from pico2d import *
 
+
 open_canvas()
 
 
@@ -20,9 +21,16 @@ def run_rectangle():
 def run_circle():
     print("circle")
 
+    r = 300
+    x = r * cos(theta)
+    y = r* sin(theta)
+    
+
     clear_canvas_now()
-    char.draw_now(400,300)
+    char.draw_now(x, y)
     delay(0.1)
+
+    
 
     
     pass
