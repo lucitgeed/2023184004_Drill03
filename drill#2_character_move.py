@@ -67,14 +67,22 @@ def run_circle():
         y = r * math.sin(theta) + cy
         
         draw_char(x, y)
+        pass
+
+
+def run_triangle():
+    print("tri")
+    pass
 
 
 
 
 
 while True:
-    run_rectangle()
+#    run_rectangle()
 #    run_circle()
+    run_triangle()
+
 
     break
 
