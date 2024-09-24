@@ -72,6 +72,9 @@ def run_circle():
 
 def run_triangle():
     print("tri")
+
+    run_right()
+    
     pass
 
 
