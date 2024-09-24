@@ -4,7 +4,6 @@ import math
 open_canvas()
 
 
-
 grass = load_image('grass.png')
 char = load_image('character.png')
 
@@ -13,31 +12,33 @@ def draw_char(x, y):
         clear_canvas_now()
         char.draw_now(x, y)
         delay(0.01)
+        
         pass
+
 
     
 def run_top():
     print("top")
-    for x in range(0, 800, 10):
-        draw_char(800 - x, 550)
+    for x in range(0, 790, 10):
+        draw_char(790 - x, 550)
     pass
 
 def run_right():
     print("right")
-    for y in range(0, 600, 10):
+    for y in range(0, 550, 10):
         draw_char(790, y)
     pass
 
 def run_bottom(a):
     print("bottom")
-    for x in range(a, 800, 10):
+    for x in range(a, 790, 10):
         draw_char(x, 50)
     pass
 
 def run_left():
     print("left")
-    for y in range(0, 600, 10):
-        draw_char(10, 600 - y)
+    for y in range(0, 550, 10):
+        draw_char(10, 550 - y)
     pass
 
 
@@ -60,10 +61,10 @@ def run_diagonal():
 def run_rectangle():
     print("ractangle")
 
-    #run_right()
-    #run_top()
-    #run_left()
-    run_bottom(0)
+    run_right()
+    run_top()
+    run_left()
+    run_bottom(10)
    
     pass
 
@@ -82,16 +83,18 @@ def run_circle():
         y = r * math.sin(theta) + cy
         
         draw_char(x, y)
+        
         pass
+
+
 
 
 def run_triangle():
     print("tri")
 
-#    run_right()
-#    run_diagonal()
-    run_bottom(200)
-
+    run_right()
+    run_diagonal()
+    run_bottom(190)
     
     pass
 
@@ -101,7 +104,7 @@ def run_triangle():
 
 while True:
     run_rectangle()
-#    run_circle()
+    run_circle()
     run_triangle()
 
 
