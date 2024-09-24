@@ -28,9 +28,9 @@ def run_right():
         draw_char(790, y)
     pass
 
-def run_bottom():
+def run_bottom(a):
     print("bottom")
-    for x in range(0, 800, 10):
+    for x in range(a, 800, 10):
         draw_char(x, 50)
     pass
 
@@ -41,10 +41,12 @@ def run_left():
     pass
 
 
+
+
 def run_diagonal():
     print("dig")
 
-    for i in range(0, 500, 2):
+    for i in range(0, 600, 2):
         x = 800 - i
         y = 600 - i
 
@@ -58,10 +60,10 @@ def run_diagonal():
 def run_rectangle():
     print("ractangle")
 
-    run_right()
-    run_top()
-    run_left()
-    run_bottom()
+    #run_right()
+    #run_top()
+    #run_left()
+    run_bottom(0)
    
     pass
 
@@ -87,8 +89,8 @@ def run_triangle():
     print("tri")
 
 #    run_right()
-    run_diagonal()
-#    run_bottom()
+#    run_diagonal()
+    run_bottom(200)
 
     
     pass
@@ -98,7 +100,7 @@ def run_triangle():
 
 
 while True:
-#    run_rectangle()
+    run_rectangle()
 #    run_circle()
     run_triangle()
 
