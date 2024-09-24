@@ -41,6 +41,13 @@ def run_left():
     pass
 
 
+def run_diagonal():
+    print("dig")
+    pass
+
+
+
+
 
 def run_rectangle():
     print("ractangle")
@@ -73,7 +80,10 @@ def run_circle():
 def run_triangle():
     print("tri")
 
-    run_right()
+#    run_right()
+    run_diagonal()
+#    run_bottom()
+
     
     pass
 
