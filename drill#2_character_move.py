@@ -26,7 +26,7 @@ def run_top():
 def run_right():
     print("right")
     for y in range(0, 600, 10):
-        draw_char(790, y)
+        draw_char(790, 600 - y)
     pass
 
 
@@ -47,9 +47,9 @@ def run_rectangle():
     print("ractangle")
 
 #    run_top()
-#    run_right()
+    run_right()
 #    run_bottom()
-    run_left()
+#    run_left()
 
     
     pass
