@@ -43,6 +43,12 @@ def run_left():
 
 def run_diagonal():
     print("dig")
+
+    for i in range(0, 500, 2):
+        x = 800 - i
+        y = 600 - i
+
+        draw_char(x, y)
     pass
 
 
